@@ -8,7 +8,7 @@
  </head>
 <body>
  <h1 class="maintitle">Welcome to Pixtion's Flight Plans!</h1>
-<div class="flightsharelogo">
+<div class="flightsharelogo" style="background-color:whitesmoke;">
     <img src="Logo.png"/>
 </div>
 
@@ -32,12 +32,13 @@
  <h2>✈Fly Now✈</h2>
  <a href='https://www.flightshareapp.com/' target="_blank"><button>FLY</button></a>
  <br/>
+ <img id="imgFlightPlan">
  <form>
-     <label for="FLY">Where would you like to fly today?</label>
-     <select id="FLY" name="FLY">
+     <label for="ddlfly">Where would you like to fly today?</label>
+     <select id="ddlfly" name="ddlfly" onchange="GetFlightPlan()">
           <option value="choosebelow">Choose Below</option>
-          <option><img src="world-tour.png">World Tour</option>
-          <option><img src="thanksgiving-flight.png">Thanksgiving Flight</option>
+          <option value="worldtour">World Tour</option>
+          <option value="thanksgivingflight">Thanksgiving Flight</option>
 
      </select> 
  </form>
@@ -46,3 +47,24 @@
  <img src="baron-sunset.png"/>
  <br/>
 </body>
+<script>
+    function GetFlightPlan()
+    {
+        //alert("GettingTheFlightPlan");
+    var ddlflightplan=document.getElementById("ddlfly");
+    var flightplan=ddlflightplan.value;
+    if (flightplan=="worldtour")
+    {
+        document.getElementById("imgFlightPlan").src="world-tour.png";   
+    }
+    else if (flightplan=="thanksgivingflight")
+    {
+        document.getElementById("imgFlightPlan").src="thanksgiving-flight.png";   
+    }
+    else if (flightplan=="choosebelow")
+    {
+        document.getElementById("imgFlightPlan").src="";   
+    }
+
+    }
+</script>
