@@ -24,10 +24,8 @@ h1,h2,h4,th,label
 }
 .flightsharelogo{
   display: block; 
-  margin-left: 870px;
-  margin-right:auto;
-  background-color: whitesmoke;
-  place-items: center;
+  margin-left:auto;
+  margin-right: auto;
 }
 
 th.flyingmusic
