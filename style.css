@@ -29,3 +29,18 @@ h1,h2,h4,th,label
   background-color: whitesmoke;
   place-items: center;
 }
+
+th.flyingmusic
+{
+  background-color:lightskyblue;
+}
+
+button
+{
+  background-color: lightgreen;
+}
+
+th.flightshare
+{
+  background-color: lightskyblue;
+}

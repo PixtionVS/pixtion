@@ -1,84 +1,91 @@
-<meta http-equiv='cache-control' content='no-cache'> 
-<meta http-equiv='expires' content='0'> 
+<meta http-equiv='cache-control' content='no-cache'>
+<meta http-equiv='expires' content='0'>
 <meta http-equiv='pragma' content='no-cache'>
 <html>
- <head>
-  <title>Pixtion's Flight Plans</title>
-  <link rel="stylesheet" href="style.css">
- </head>
+
+<head>
+    <title>Pixtion's Flight Plans</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
 <body>
- <h1 class="maintitle">Welcome to Pixtion's Flight Plans!</h1>
-<div class="flightsharelogo" style="background-color:whitesmoke;">
-    <img src="Logo.png"/>
-</div>
+    <h1 class="maintitle">Welcome to Pixtion's Flight Plans!</h1>
+    <div class="flightsharelogo" style="background-color:whitesmoke;">
+        <img src="Logo.png" />
+    </div>
 
- <br>
- </br>
- <a href="https://youtu.be/oH6IAbq1wVI" target="_blank">
-  Learn More
- </a>
- <h2>About Pixtion's Flight Plans</h2>
-  <table>
-  <tr>
-      <th colspan="2">MORE FLIGHT PLANS</th>
-  </tr>
-  <tr>
-      <th>COMING SOON</th>
-      <th>SUMMER 2021</th>
-  </tr>
-  <p>Pixtion's Flight Plans brings a new way to fly with your friends. Just imagine being in a<br> immersive world where you can see where other people are flying on a map, like your friends and</br> fly together with them. Imagine flying island to island in autopilot with<br> multiple waypoints set in a place like Hawaii. Imagine doing all this and more with Pixtion's Flight Plans,</br> with a full immersive experience.
-  </p>
-  </table>
- <h2>✈Fly Now✈</h2>
- <a href='https://www.flightshareapp.com/' target="_blank"><button>FLY</button></a>
- <br/>
- <br>
- <br>
- <a href='https://open.spotify.com/playlist/2PqVNZ7CJ7D77UuDVYhx7k?si=XAKbMxZcQaKTNH0rUA-JnA' target="_blank"><button>Play Flying Music Here</button></a>
- <br>
- <br/>
- <form>
-     <label for="ddlfly">Where would you like to fly today?</label>
-     <select id="ddlfly" name="ddlfly" onchange="GetFlightPlan()">
-          <option value="choosebelow">Choose Below</option>
-          <option value="worldtour">World Tour</option>
-          <option value="thanksgivingflight">Thanksgiving Flight</option>
+    <br>
+    </br>
+    <a href="https://youtu.be/oH6IAbq1wVI" target="_blank">
+        Learn More
+    </a>
+    <h2>About Pixtion's Flight Plans</h2>
+    <table border="1">
+        <tr>
+            <th colspan="2">MORE FLIGHT PLANS</th>
+        </tr>
+        <tr>
+            <th>COMING SOON</th>
+            <th>SUMMER 2021</th>
+        </tr>
+    </table>
+    <p>Pixtion's Flight Plans brings a new way to fly with your friends. Just imagine being in a<br> immersive world
+        where you can see where other people are flying on a map, like your friends and</br> fly together with them.
+        Imagine flying island to island in autopilot with<br> multiple waypoints set in a place like Hawaii. Imagine
+        doing all this and more with Pixtion's Flight Plans,</br> with a full immersive experience.
+    </p>
+    <h2>✈Fly Now✈</h2>
+    <a href='https://www.flightshareapp.com/' target="_blank"><button>FLY</button></a>
+    <br>
+    <br />
+    <label for="ddlfly">Where would you like to fly today?</label>
+    <select id="ddlfly" name="ddlfly" onchange="GetFlightPlan()">
+        <option value="choosebelow">Choose Below</option>
+        <option value="worldtour">World Tour</option>
+        <option value="thanksgivingflight">Thanksgiving Flight</option>
 
-        </select>
-        <br>
+    </select>
+    <br>
     <img id="imgFlightPlan">
+    <br>
+    <br>
+    <table border="1" width="801">
+        <tr>
+    <th class="flightshare">In collaboration with ✈FlightShare✈</th>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <img src="baron-sunset.png" />
+    <br />
+    <br>
+    <table border="1" width="1280">
+        <tr>
+            <th class="flyingmusic">Play Flying Music Here</th>
+        </tr>
+    </table>
+    <section>
+        <iframe width="1280" height="720" src="https://www.youtube.com/embed/-5KAN9_CzSA" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
 
-
- </form>
-</table>
- <h4>In collaboration with FlightShare</h4>
- <img src="baron-sunset.png"/>
- <br/>
- <br>
- <section>
- <iframe width="1280" height="720" src="https://www.youtube.com/embed/-5KAN9_CzSA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
- </section>
- </br>
+    </section>
+    </br>
 </body>
 <script>
-    function GetFlightPlan()
-    {
+    function GetFlightPlan() {
         //alert("GettingTheFlightPlan");
-    var ddlflightplan=document.getElementById("ddlfly");
-    var flightplan=ddlflightplan.value;
-    if (flightplan=="worldtour")
-    {
-        document.getElementById("imgFlightPlan").src="world-tour.png";   
-    }
-    else if (flightplan=="thanksgivingflight")
-    {
-        document.getElementById("imgFlightPlan").src="thanksgiving-flight.png";   
-    }
-    else if (flightplan=="choosebelow")
-    {
-        document.getElementById("imgFlightPlan").src="";   
-    }
+        var ddlflightplan = document.getElementById("ddlfly");
+        var flightplan = ddlflightplan.value;
+        if (flightplan == "worldtour") {
+            document.getElementById("imgFlightPlan").src = "world-tour.png";
+        }
+        else if (flightplan == "thanksgivingflight") {
+            document.getElementById("imgFlightPlan").src = "thanksgiving-flight.png";
+        }
+        else if (flightplan == "choosebelow") {
+            document.getElementById("imgFlightPlan").src = "";
+        }
 
     }
 </script>
