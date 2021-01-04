@@ -1,7 +1,7 @@
 body
 {
-  background-color:white;
-  border-color: black;
+  background-color:rgb(240, 231, 167);
+  border-color: black
 }
 
 p
@@ -30,15 +30,78 @@ h1,h2,h4,th,label
 
 th.flyingmusic
 {
-  background-color:lightskyblue;
+    background-color:rgb(229, 122, 68);
+    border: none;
+    color:black;
+    padding: 15px 32px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    font-size: 19px;
+    margin: 4px 2px;
+    border-radius: 30px;
+    outline: none;
+    transition: transform .2s;
+    display: block;
+    margin-left: 10px;
+    margin-right: auto;
+    border:none;
+    border:0px solid transparent;
+}
+.flyingplaylist
+{
+  border:0px solid transparent;
+  border:none;
 }
 
-button
+.flybutton
 {
-  background-color: lightgreen;
+  background-color:rgb(40, 150, 90);
+    border: none;
+    color:white;
+    padding: 15px 32px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    font-size: 19px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+    outline: none;
+    transition: transform .2s;
+    display: block;
+    margin-left: 16%;
+    margin-right: auto;
+}
+
+.flybutton:hover 
+{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  transform: scale(1.05);
 }
 
 th.flightshare
 {
-  background-color: lightskyblue;
+  background-color:rgb(124, 198, 254);
+  border: none;
+  color:black;
+  padding: 15px 32px;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 30px;
+  outline: none;
+  transition: transform .2s;
+  display: block;
+  margin-left: 10px;
+  margin-right: auto;
+  border:none;
+  border:0px solid transparent;
+}
+.flightsharetable
+{
+  border:0px solid transparent;
+  border:none;
 }

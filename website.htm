@@ -4,19 +4,20 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+
     <title>Pixtion's Flight Plans</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1 class="maintitle">Welcome to Pixtion's Flight Plans!</h1> 
-        <img class="flightsharelogo" src="Logo.png" />
-
-    <br>
-    </br>
-    <a href="https://youtu.be/oH6IAbq1wVI" target="_blank">
-        Learn More
-    </a>
+    <h1 class="maintitle">Welcome to Pixtion's Flight Plans!</h1>
+    <img class="flightsharelogo" src="logo_with_transparent_bg.png" />
     <h2>About Pixtion's Flight Plans</h2>
     <table border="1">
         <tr>
@@ -33,9 +34,16 @@
         doing all this and more with Pixtion's Flight Plans,</br> with a full immersive experience.
     </p>
     <h2>✈Fly Now✈</h2>
-    <a href='https://www.flightshareapp.com/' target="_blank"><button>FLY</button></a>
+    <a href="https://youtu.be/oH6IAbq1wVI" target="_blank"><button class="flybutton">Learn More</button></a>
     <br>
-    <br />
+    <table border="1" width="801" class="flightsharetable">
+        <tr>
+            <th class="flightshare">In collaboration with ✈FlightShare✈</th>
+        </tr>
+    </table>
+    <br>
+    <h3>Go to the FlightShare App, then go to flight plans, and you will find your desired flight plans under the name of "Pixtion"</h3>
+
     <label for="ddlfly">Where would you like to fly today?</label>
     <select id="ddlfly" name="ddlfly" onchange="GetFlightPlan()">
         <option value="choosebelow">Choose Below</option>
@@ -47,17 +55,11 @@
     <img id="imgFlightPlan">
     <br>
     <br>
-    <table border="1" width="801">
-        <tr>
-    <th class="flightshare">In collaboration with ✈FlightShare✈</th>
-        </tr>
-    </table>
-    <br>
     <br>
     <img src="baron-sunset.png" />
-    <br />
     <br>
-    <table border="1" width="1280">
+    <br>
+    <table border="1" width="1280" class="flyingplaylist" >
         <tr>
             <th class="flyingmusic">Play Flying Music Here</th>
         </tr>
