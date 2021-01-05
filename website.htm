@@ -46,6 +46,7 @@
         <option value="worldtour">World Tour</option>
         <option value="thanksgivingflight">Thanksgiving Flight</option>
         <option value="desertmountain">Desert Mountain Trip</option>
+        <option value="newyork">New York Trip</option>
 
     </select>
     <br>
@@ -75,11 +76,16 @@
         else if (flightplan == "thanksgivingflight") {
             document.getElementById("imgFlightPlan").src = "thanksgiving-flight.png";
         }
-        else if (flightplan = "desertmountain") {
+        else if (flightplan == "desertmountain") {
             document.getElementById("imgFlightPlan").src = "desert-mountain.png";
         }
-        else if (flightplan = "choosebelow") {
+        else if (flightplan == "choosebelow") {
             document.getElementById("imgFlightPlan").src = "";
+            
+        }
+        else if (flightplan == "newyork") {
+            document.getElementById("imgFlightPlan").src = "new-york.png";
+            
         }
     }
 </script>
